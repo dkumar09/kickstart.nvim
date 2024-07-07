@@ -21,5 +21,5 @@ vim.opt.isfname:append '@-@'
 vim.opt.updatetime = 50
 vim.opt.colorcolumn = '110'
 -- folding and syntax highlighting
--- vim.opt.foldmethod = 'expr'
--- vim.opt.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
+vim.opt.foldmethod = 'expr'
+vim.opt.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
