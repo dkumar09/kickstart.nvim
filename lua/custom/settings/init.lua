@@ -20,6 +20,8 @@ vim.opt.signcolumn = 'yes'
 vim.opt.isfname:append '@-@'
 vim.opt.updatetime = 50
 vim.opt.colorcolumn = '110'
+vim.opt.foldcolumn = '1'
+vim.opt.foldlevel = 99
 -- folding and syntax highlighting
 vim.opt.foldmethod = 'expr'
 vim.opt.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
