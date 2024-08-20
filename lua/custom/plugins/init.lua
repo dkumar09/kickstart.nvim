@@ -37,5 +37,19 @@ return {
         'nvim-lua/plenary.nvim',
       },
     },
+    {
+      'nvim-orgmode/orgmode',
+      config = function()
+        require('orgmode').setup {
+          org_agenda_files = { '~/org/*' },
+          org_default_notes_file = '~/org/refile.org',
+        }
+        require('cmp').setup {
+          sources = {
+            { name = 'orgmode' },
+          },
+        }
+      end,
+    },
   },
 }
